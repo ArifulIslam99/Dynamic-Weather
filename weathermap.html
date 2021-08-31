@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url('https://wallpaperaccess.com/full/432499.png');
+            
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+  background-size: 100% 100%;
+        }
+        .cityName{
+            color: white;
+            font-size: 72px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .temp{
+            color: white;
+            font-size: 48px;
+            text-align: center;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body >
+     <h1 class="text-center text-white py-5">Weather Around The World!</h1>
+     <div class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control" placeholder="Enter City" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchCity()" class="btn btn-danger text-white" type="button" id="button-search">Search</button>
+      </div> 
+
+
+      <section id="info" class="py-5">
+         
+      </section>
+      
+       <script src="weather.js"></script>
+</body>
+</html>
