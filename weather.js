@@ -4,7 +4,7 @@ function searchCity(){
     console.log(cityText);
     
     
-    const url = `http://api.weatherapi.com/v1/current.json?key=2dd78c8ef64c49af833182101213008&q=${cityText}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=2dd78c8ef64c49af833182101213008&q=${cityText}&aqi=no`;
 
     fetch(url)
     .then(res => res.json())
